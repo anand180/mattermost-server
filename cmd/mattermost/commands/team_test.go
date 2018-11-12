@@ -12,7 +12,7 @@ import (
 )
 
 func TestCreateTeam(t *testing.T) {
-	th := api4.Setup().InitSystemAdmin()
+	th := api4.Setup().InitBasic().InitSystemAdmin()
 	defer th.TearDown()
 
 	id := model.NewId()
